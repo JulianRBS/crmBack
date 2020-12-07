@@ -24,7 +24,9 @@ connection.connect(error => {
 */
 
 const ClienteModel=require('./models/clientes');
+const CampainModel=require('./models/campains');
 const Cliente=ClienteModel(sequelize,Sequelize)
+const Campain=CampainModel(sequelize,Sequelize)
 
 sequelize.sync({force:false})
     .then(()=>{
@@ -32,5 +34,5 @@ sequelize.sync({force:false})
     })
 
 module.exports={
-    Cliente
+    Cliente,Campain
 }

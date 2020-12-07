@@ -19,7 +19,8 @@ router.post('/',async (req,res)=>{
             apellidos:item.apellidos,
             telefono:item.telefono,
             direccion:item.direccion,
-            campain:req.body.campain,
+            campain:req.body.nombre,
+            codigoCampain:req.body.codigo,
         });
     }
     res.json("Clientes Guardados")

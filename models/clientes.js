@@ -10,6 +10,6 @@ module.exports = (sequelize,type)=>{
         direccion:type.STRING,
         telefono:type.STRING,
         campain:type.STRING,
-
+        codigoCampain:type.STRING
     })
 }
